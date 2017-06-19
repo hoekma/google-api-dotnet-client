@@ -20,6 +20,8 @@ Supported Platforms:
 - .NET Framework 4.5+
 - NetStandard1.3, providing .NET Core support
     </Description>
+    <AssemblyVersion>1.27.1.1</AssemblyVersion>
+    <FileVersion>1.27.1.1</FileVersion>
   </PropertyGroup>
 
   <!-- package references; common then per-target -->

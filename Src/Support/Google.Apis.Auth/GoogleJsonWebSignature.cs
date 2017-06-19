@@ -216,8 +216,7 @@ namespace Google.Apis.Auth
         /// The payload as specified in 
         /// https://developers.google.com/accounts/docs/OAuth2ServiceAccount#formingclaimset.
         /// </summary>
-        public class Payload : JsonWebSignature.Payload
-        {
+        public class Payload : JsonWebSignature.Payload {
             /// <summary>
             /// a space-delimited list of the permissions the application requests or <c>null</c>.
             /// </summary>
@@ -229,6 +228,55 @@ namespace Google.Apis.Auth
             /// </summary>
             [Newtonsoft.Json.JsonPropertyAttribute("prn")]
             public string Prn { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the email associated with thie JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("email")]
+            public string Email { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the email associated with thie JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("email_verified")]
+            public bool EmailVerified { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the name associated with this JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("name")]
+            public string Name { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the picture https://address associated with this JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("picture")]
+            public string Picture { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the given name associated with this JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("given_name")]
+            public string GivenName { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the family name associated with this JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("family_name")]
+            public string FamilyName { get; set; }
+
+            /// <summary>
+            /// Gets or sets type claim that identifies the locale associated with thie JWT
+            /// <c>null</c>.
+            /// </summary>
+            [Newtonsoft.Json.JsonPropertyAttribute("locale")]
+            public string Locale { get; set; }
         }
     }
 }
